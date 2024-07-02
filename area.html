@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <script>
+        function area()
+        {
+            var length, breadth, sum;
+            length = parseInt(document.getElementById("length").value);
+            breadth = parseInt(document.getElementById("breadth").value);
+            sum = length * breadth;
+            document.getElementById("answer").value = sum;
+        }
+      
+    </script>
+    </head>
+    <body>
+        <p> Enter the First Number: <input type="text" id="first"></p>
+        <p> Enter the Second Number: <input type="text" id="second"></p>
+        <button onclick="area()">Submit</button>
+        <p> Sum = <input id="answer"></p>
+    </body>
+</html>
